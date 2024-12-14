@@ -1,4 +1,5 @@
 from enum import Enum
+import reflex as rx
 
 from .fonts import Font
 from .colors import Color, TextColor
@@ -22,5 +23,20 @@ STYLESHEETS = {
 BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
     "color": TextColor.PRIMARY.value,
-    "background": Color.PRIMARY.value
+    "background": Color.PRIMARY.value,
+    rx.link: {
+        "text_decoration": "none",
+        "_hover": {
+            "text_decoration": "none",
+        }
+    }
 }
+
+
+MAX_WIDTH_STYLE = dict(
+    max_width = MAX_WIDTH,
+    width = "100%",
+    align_items = "start",
+    padding_x = Size.BIG.value,
+    align = "center"
+)

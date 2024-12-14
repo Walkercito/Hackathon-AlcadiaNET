@@ -12,3 +12,4 @@ class TextColor(Enum):
     PRIMARY = "#FFFFFF"
     SECONDARY = "#212529"
     TERCIARY = "#D3D3D3"
+    HEADER = "#fdfb76"

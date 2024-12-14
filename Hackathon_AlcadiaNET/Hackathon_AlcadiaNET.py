@@ -14,6 +14,8 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 header(),
+                header(),
+                header(),
             ),
             align = "center",
             width = "100%",
@@ -24,10 +26,12 @@ def index() -> rx.Component:
 
 app = rx.App(
     stylesheets = STYLESHEETS,
-    style = BASE_STYLE
+    style = BASE_STYLE,
+    
 )
 app.add_page(
     index,
+    image = "favicon.png",
     title = "ArcadiaNET | Index",
     description = "Welcome to ArcadiaNET: A 90's inspired social network with mini-games, self-profile, forum and IRC-like chatrooms!"
     )

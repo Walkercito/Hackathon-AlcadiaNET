@@ -9,7 +9,7 @@ from Hackathon_AlcadiaNET.components.button import button
 def navbar() -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.text("ArcadiaNET", font_size = [f"{Size.MEDIUM.value}", f"{Size.DEFAULT.value}", f"{Size.DEFAULT.value}"]),
+            rx.text("ArcadiaNET", font_size = [f"{Size.MEDIUM.value}", f"{Size.DEFAULT.value}", f"{Size.DEFAULT.value}"], color = TextColor.HEADER.value),
             rx.spacer(),
             button(
                 "Profile",
@@ -23,7 +23,7 @@ def navbar() -> rx.Component:
         position = "sticky",
         border_bottom = f"0.25em solid {Color.SECONDARY.value}",
         padding_x = Size.MEDIUM.value,
-        padding_y = Size.DEFAULT.value,
+        padding_y = Size.MEDIUM.value,
         z_index = "999",
         width = "100%",
         top = "0"
