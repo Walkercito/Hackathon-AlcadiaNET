@@ -26,5 +26,5 @@ def footer() -> rx.Component:
         padding_top = Size.DEFAULT.value,
         z_index = "999",
         width = "100%",
-        top = "0"
+        bottom = "0"
     )
