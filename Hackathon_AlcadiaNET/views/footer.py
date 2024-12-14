@@ -13,7 +13,7 @@ def footer() -> rx.Component:
             ),
             rx.text(
                 "Best viewed with Netscape Navigator 3.0",
-                font_size = [f"{Size.SAMLL.value}", f"{Size.AVARAGE.value}", f"{Size.AVARAGE.value}"],
+                font_size = [f"{Size.SMALL.value}", f"{Size.AVARAGE.value}", f"{Size.AVARAGE.value}"],
             ),
             align_items = "center",
         ),
@@ -26,5 +26,5 @@ def footer() -> rx.Component:
         padding_top = Size.DEFAULT.value,
         z_index = "999",
         width = "100%",
-        top = "0"
+        bottom = "0"
     )

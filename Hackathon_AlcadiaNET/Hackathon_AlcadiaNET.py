@@ -9,6 +9,10 @@ from Hackathon_AlcadiaNET.components.news import news
 from Hackathon_AlcadiaNET.styles.styles import MAX_WIDTH
 from Hackathon_AlcadiaNET.styles.styles import STYLESHEETS, BASE_STYLE
 
+from Hackathon_AlcadiaNET.pages.chat_page import chat_page
+from Hackathon_AlcadiaNET.pages.profile_page import profile_page
+
+
 
 def index() -> rx.Component:
     return rx.box(
@@ -39,3 +43,15 @@ app.add_page(
     title = "ArcadiaNET | Index",
     description = "Welcome to ArcadiaNET: A 90's inspired social network with mini-games, self-profile, forum and IRC-like chatrooms!"
     )
+app.add_page(
+    profile_page,
+    image = "favicon.png",
+    title = "ArcadiaNET | Profile",
+    route = "/profile"
+)
+app.add_page(
+    chat_page,
+    image = "favicon.png",
+    title = "ArcadiaNET | Chat",
+    route = "/chatroom"
+)
