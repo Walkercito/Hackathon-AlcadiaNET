@@ -8,8 +8,8 @@ def footer() -> rx.Component:
     return rx.box(
         rx.vstack(
             rx.text(
-                "© 1995 Arcadia Net - The future of social networks!",
-                font_size = [f"{Size.TINY.value}", f"{Size.AVARAGE.value}", f"{Size.AVARAGE.value}"],
+                "© 1995 ArcadiaNET",
+                font_size = [f"{Size.SMALL.value}", f"{Size.AVARAGE.value}", f"{Size.AVARAGE.value}"],
             ),
             rx.text(
                 "Best viewed with Netscape Navigator 3.0",

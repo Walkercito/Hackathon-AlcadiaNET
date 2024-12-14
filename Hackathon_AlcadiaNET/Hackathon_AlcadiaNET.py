@@ -6,6 +6,7 @@ from Hackathon_AlcadiaNET.views.navbar import navbar
 from Hackathon_AlcadiaNET.views.header import header
 from Hackathon_AlcadiaNET.views.footer import footer
 from Hackathon_AlcadiaNET.components.news import news
+from Hackathon_AlcadiaNET.components.button import button
 from Hackathon_AlcadiaNET.styles.styles import MAX_WIDTH
 from Hackathon_AlcadiaNET.styles.styles import STYLESHEETS, BASE_STYLE
 
@@ -23,6 +24,11 @@ def index() -> rx.Component:
                 header(),
                 rx.spacer(),
                 news(),
+                button(
+                    "Chatroom",
+                    "/chatroom",
+                    "is-warning",
+                )
             ),
         align = "center",
         width = "100%",
