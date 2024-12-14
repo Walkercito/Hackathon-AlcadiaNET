@@ -15,6 +15,7 @@ def navbar() -> rx.Component:
                 "Profile",
                 "/profile",
                 "is-warning",
+                external = False
             ),
             align="center",
             width = "100%"
