@@ -1,6 +1,11 @@
 import reflex as rx
 import asyncio
 
+class State(rx.State):
+    @rx.event
+    def change_page(self, url: str):
+        return rx.redirect(url)
+
 class ChatState(rx.State):
     user_name: str = ""        
     messages: list[str] = []     

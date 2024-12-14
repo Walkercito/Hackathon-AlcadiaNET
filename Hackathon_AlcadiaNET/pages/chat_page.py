@@ -54,10 +54,15 @@ def chat_page() -> rx.Component:
                     ),
                     chat(),
                     class_name = "nes-container is-dark with-title is-centered",
+                    width = "100%",
+                    height = "100%",
                 ),
                 action_bar(),
                 align="center",
-            )
+            ),
+
         ),
         footer(),
+        width = "100%",
+        height = "100%",
     )

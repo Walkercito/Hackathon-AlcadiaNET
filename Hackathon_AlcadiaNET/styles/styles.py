@@ -7,6 +7,7 @@ from .colors import Color, TextColor
 MAX_WIDTH = "1000px"
 FLEX_DIRECTION = ["column", "column", "column", "row", "row"]
 class Size(Enum):
+    ZERO = "0px !important"
     TINY = "0.4em"
     SMALL = "0.5em"
     AVARAGE = "0.8em"
@@ -27,11 +28,19 @@ BASE_STYLE = {
     "color": TextColor.PRIMARY.value,
     "background": Color.PRIMARY.value,
     rx.link: {
+        "font_family": Font.DEFAULT.value,
+        "_active": {
+            "outline": "none",
+            "box_shadow": "none",
+        },
+        "color": Color.PRIMARY.value,
         "text_decoration": "none",
-        "_hover": {
-            "text_decoration": "none",
-        }
-    }
+        "_hover": {},
+        "user_select": "none",
+        "-webkit-user-select": "none",
+        "-moz-user-select": "none",
+        "-ms-user-select": "none",
+    },
 }
 
 
