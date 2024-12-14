@@ -15,9 +15,9 @@ def bottoms() -> rx.Component:
                 button(text = "Mini-Games", url = "/minigames", style = ""),
                 button(text = "Chatroom", url = "/minigames", style = "is-primary"),
                 button(text = "Bookguest", url = "/minigames", style = ""),
-                columns = "3",
-                spacing = "9",
-                align = "center"
+                columns = rx.breakpoints(initial = "2", md = "3"),
+                spacing = rx.breakpoints(initial = "4", md = "9"),
+                align_items = rx.breakpoints(initial = "center", md = "center"),
             ),
             style = MAX_WIDTH_STYLE,
             border_top = f"0.25em solid {Color.SECONDARY.value}",
