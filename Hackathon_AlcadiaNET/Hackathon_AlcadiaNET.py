@@ -11,6 +11,7 @@ from Hackathon_AlcadiaNET.styles.styles import STYLESHEETS, BASE_STYLE
 
 def index() -> rx.Component:
     return rx.box(
+        rx.script("document.documentElement.lang='en'"),
         navbar(),
         rx.center(
             rx.vstack(

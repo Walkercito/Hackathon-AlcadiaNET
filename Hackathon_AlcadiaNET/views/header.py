@@ -31,10 +31,20 @@ def header() -> rx.Component:
                     "Your gateway to the digital frontier of the 90's!",
                     color=TextColor.TERCIARY.value
                 ),
+                rx.text(
+                    "Experience the nostalgia of the 90's with ArcadiaNET! Chats, games, and more, all in one place. Join the retro revolution today!",
+                    font_size = Size.AVARAGE.value,
+                    padding_top = Size.BIG.value,
+                ),
+                rx.text(
+                    "Use the buttons grid down to start",
+                    font_size = Size.AVARAGE.value,
+                    padding_top = Size.BIG.value,
+                )
             ),
-            align_items="start",
-            flex_direction=FLEX_DIRECTION
+            align_items = "start",
+            flex_direction = FLEX_DIRECTION
         ),
-        style=MAX_WIDTH_STYLE,
-        padding_top=Size.BIG.value,
+        style =MAX_WIDTH_STYLE,
+        padding_top = Size.BIG.value,
     )

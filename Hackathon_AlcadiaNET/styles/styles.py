@@ -8,6 +8,7 @@ MAX_WIDTH = "1000px"
 FLEX_DIRECTION = ["column", "column", "column", "row", "row"]
 class Size(Enum):
     SMALL = "0.5em"
+    AVARAGE = "0.8em"
     MEDIUM = "1em"
     DEFAULT = "1.5em"
     BIG = "2em"
