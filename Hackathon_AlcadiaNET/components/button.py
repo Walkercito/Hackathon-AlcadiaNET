@@ -7,6 +7,6 @@ def button(text: str, url: str, style: str, external: bool = False) -> rx.Compon
         class_name = f"nes-btn {style}",
         on_click = rx.redirect(
             url,
-            external = True
+            external = external
         )
     )

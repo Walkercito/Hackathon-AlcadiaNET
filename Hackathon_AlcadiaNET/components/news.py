@@ -30,7 +30,7 @@ def news() -> rx.Component:
                 deletionSpeed = 1.0,
             ),
             style = MAX_WIDTH_STYLE,
-            class_name = "nes-container is-dark with-title"
+            class_name = "nes-container is-dark is-centered with-title"
         ),
         flex_direction = FLEX_DIRECTION,
         style = MAX_WIDTH_STYLE,

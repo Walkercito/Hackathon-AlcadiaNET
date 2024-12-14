@@ -10,7 +10,8 @@ def navbar() -> rx.Component:
     return rx.vstack(
         rx.hstack(
             rx.text("ArcadiaNET", font_size = [f"{Size.MEDIUM.value}", f"{Size.DEFAULT.value}", f"{Size.DEFAULT.value}"], color = "#fdfb76", style = {"textShadow": "1px 1px 2px rgba(234, 89, 64, 0.5)"}),
-            rx.spacer(),            button(
+            rx.spacer(),            
+            button(
                 "Profile",
                 "/profile",
                 "is-warning",

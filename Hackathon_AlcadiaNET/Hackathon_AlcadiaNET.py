@@ -24,19 +24,22 @@ def index() -> rx.Component:
                 header(),
                 rx.spacer(),
                 news(),
+                rx.spacer(),
                 button(
                     "Chatroom",
                     "/chatroom",
-                    "is-warning",
-                )
+                    "is-success",
+                ),
+                align = "center",
+                width = "100%",
+                spacing = "3"
             ),
-        align = "center",
-        width = "100%",
-        pacing = "7"
+            align = "center",
+            width = "100%",
+            spacing = "3"
         ),
         footer(),
     )
-
 
 app = rx.App(
     stylesheets = STYLESHEETS,
