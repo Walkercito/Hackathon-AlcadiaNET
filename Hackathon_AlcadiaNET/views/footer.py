@@ -9,11 +9,11 @@ def footer() -> rx.Component:
         rx.vstack(
             rx.text(
                 "© 1995 Arcadia Net - The future of social networks!",
-                font_size = [f"{Size.SMALL.value}", f"{Size.AVARAGE.value}", f"{Size.AVARAGE.value}"],
+                font_size = [f"{Size.TINY.value}", f"{Size.AVARAGE.value}", f"{Size.AVARAGE.value}"],
             ),
             rx.text(
                 "Best viewed with Netscape Navigator 3.0",
-                font_size = [f"{Size.TINY.value}", f"{Size.AVARAGE.value}", f"{Size.AVARAGE.value}"],
+                font_size = [f"{Size.SAMLL.value}", f"{Size.AVARAGE.value}", f"{Size.AVARAGE.value}"],
             ),
             align_items = "center",
         ),

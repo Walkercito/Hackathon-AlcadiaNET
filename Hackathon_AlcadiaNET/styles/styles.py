@@ -7,7 +7,7 @@ from .colors import Color, TextColor
 MAX_WIDTH = "1000px"
 FLEX_DIRECTION = ["column", "column", "column", "row", "row"]
 class Size(Enum):
-    TINY = "0.2em"
+    TINY = "0.4em"
     SMALL = "0.5em"
     AVARAGE = "0.8em"
     MEDIUM = "1em"
