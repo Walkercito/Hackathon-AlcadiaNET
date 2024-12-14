@@ -4,6 +4,7 @@ from Hackathon_AlcadiaNET.styles.styles import Size
 
 from Hackathon_AlcadiaNET.views.navbar import navbar
 from Hackathon_AlcadiaNET.views.header import header
+from Hackathon_AlcadiaNET.views.footer import footer
 from Hackathon_AlcadiaNET.components.news import news
 from Hackathon_AlcadiaNET.styles.styles import MAX_WIDTH
 from Hackathon_AlcadiaNET.styles.styles import STYLESHEETS, BASE_STYLE
@@ -17,12 +18,13 @@ def index() -> rx.Component:
             rx.vstack(
                 header(),
                 rx.spacer(),
-                news()
+                news(),
             ),
-            align = "center",
-            width = "100%",
-            spacing = "7"
-        )
+        align = "center",
+        width = "100%",
+        pacing = "7"
+        ),
+        footer(),
     )
 
 

@@ -1,8 +1,10 @@
 import reflex as rx
 from reflex_type_animation import type_animation
 
-from Hackathon_AlcadiaNET.styles.styles import MAX_WIDTH_STYLE
+from Hackathon_AlcadiaNET.styles.styles import Size
 from Hackathon_AlcadiaNET.styles.styles import FLEX_DIRECTION
+from Hackathon_AlcadiaNET.styles.styles import MAX_WIDTH_STYLE
+from Hackathon_AlcadiaNET.styles.colors import TextColor, Color
 
 
 def news() -> rx.Component:
@@ -32,4 +34,5 @@ def news() -> rx.Component:
         ),
         flex_direction = FLEX_DIRECTION,
         style = MAX_WIDTH_STYLE,
+        padding_bottom = Size.DEFAULT.value,
     )
