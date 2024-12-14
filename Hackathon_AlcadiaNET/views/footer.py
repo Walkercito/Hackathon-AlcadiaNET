@@ -19,12 +19,12 @@ def footer() -> rx.Component:
         ),
         bg = Color.PRIMARY.value,
         align_items = "center",
-        position = "sticky",
+        position = "fixed",
         border_top = f"0.25em solid {Color.SECONDARY.value}",
         padding_x = Size.MEDIUM.value,
         padding_y = Size.MEDIUM.value,
         padding_top = Size.DEFAULT.value,
         z_index = "999",
         width = "100%",
-        top = "0"
+        bottom = "0"
     )
