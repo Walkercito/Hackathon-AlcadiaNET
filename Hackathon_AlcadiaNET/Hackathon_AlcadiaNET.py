@@ -29,6 +29,7 @@ def index() -> rx.Component:
                     "Chatroom",
                     "/chatroom",
                     "is-success",
+                    external = True
                 ),
                 align = "center",
                 width = "100%",
