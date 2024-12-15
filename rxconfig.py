@@ -1,5 +1,5 @@
 import reflex as rx
 
 config = rx.Config(
-    app_name="Hackathon_AlcadiaNET",
+    app_name="arcadiaNET",
 )

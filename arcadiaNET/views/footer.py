@@ -1,7 +1,7 @@
 import reflex as rx
 
-from Hackathon_AlcadiaNET.styles.styles import Size
-from Hackathon_AlcadiaNET.styles.colors import TextColor, Color
+from arcadiaNET.styles.styles import Size
+from arcadiaNET.styles.colors import TextColor, Color
 
 
 def footer() -> rx.Component:

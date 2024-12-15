@@ -1,10 +1,10 @@
 import reflex as rx
 
-from Hackathon_AlcadiaNET.styles.styles import Size
-from Hackathon_AlcadiaNET.styles.styles import MAX_WIDTH
-from Hackathon_AlcadiaNET.styles.styles import FLEX_DIRECTION
-from Hackathon_AlcadiaNET.styles.styles import MAX_WIDTH_STYLE
-from Hackathon_AlcadiaNET.styles.colors import TextColor, Color
+from arcadiaNET.styles.styles import Size
+from arcadiaNET.styles.styles import MAX_WIDTH
+from arcadiaNET.styles.styles import FLEX_DIRECTION
+from arcadiaNET.styles.styles import MAX_WIDTH_STYLE
+from arcadiaNET.styles.colors import TextColor, Color
 
 
 def header() -> rx.Component:

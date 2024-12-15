@@ -1,17 +1,17 @@
 import reflex as rx
 
-from Hackathon_AlcadiaNET.views.navbar import navbar
-from Hackathon_AlcadiaNET.views.header import header
-from Hackathon_AlcadiaNET.views.footer import footer
+from arcadiaNET.views.navbar import navbar
+from arcadiaNET.views.header import header
+from arcadiaNET.views.footer import footer
 
-from Hackathon_AlcadiaNET.styles.styles import Size
+from arcadiaNET.styles.styles import Size
 
-from Hackathon_AlcadiaNET.styles.styles import MAX_WIDTH
-from Hackathon_AlcadiaNET.styles.styles import STYLESHEETS, MAX_WIDTH_STYLE
+from arcadiaNET.styles.styles import MAX_WIDTH
+from arcadiaNET.styles.styles import STYLESHEETS, MAX_WIDTH_STYLE
 
 
 
-def games_page() -> rx.Component:
+def guestbook_page() -> rx.Component:
     return rx.box(
         rx.script("document.documentElement.lang='en'"),
         navbar(),

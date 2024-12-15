@@ -1,17 +1,17 @@
 import reflex as rx
 
-from Hackathon_AlcadiaNET.views.profile_navbar import navbar
-from Hackathon_AlcadiaNET.views.header import header
-from Hackathon_AlcadiaNET.views.footer import footer
+from arcadiaNET.views.profile_navbar import navbar
+from arcadiaNET.views.header import header
+from arcadiaNET.views.footer import footer
 
-from Hackathon_AlcadiaNET.styles.styles import Size
-from Hackathon_AlcadiaNET.styles.colors import TextColor, Color
-from Hackathon_AlcadiaNET.components.button import button
+from arcadiaNET.styles.styles import Size
+from arcadiaNET.styles.colors import TextColor, Color
+from arcadiaNET.components.button import button
 
-from Hackathon_AlcadiaNET.components.news import news
-from Hackathon_AlcadiaNET.views.bottoms import bottoms
-from Hackathon_AlcadiaNET.styles.styles import MAX_WIDTH
-from Hackathon_AlcadiaNET.styles.styles import STYLESHEETS, MAX_WIDTH_STYLE
+from arcadiaNET.components.news import news
+from arcadiaNET.views.bottoms import bottoms
+from arcadiaNET.styles.styles import MAX_WIDTH
+from arcadiaNET.styles.styles import STYLESHEETS, MAX_WIDTH_STYLE
 
 
 
@@ -38,14 +38,14 @@ def profile_page() -> rx.Component:
                                         class_name = "nes-ash",
                                     ),
                                     rx.vstack(
-                                        rx.text("Walkercito", font_size = {
+                                        rx.text("$CoolUser98", font_size = {
                                             "base": "md",
                                             "md": "lg",
                                             "lg": "xl"
                                         },
                                         color = TextColor.ACCENT.value,
                                         ),
-                                        rx.text("Bio: A cozy guy!", font_size = {
+                                        rx.text("Bio: Such a human!", font_size = {
                                             "base": "md",
                                             "md": "lg",
                                             "lg": "xl"
@@ -66,7 +66,7 @@ def profile_page() -> rx.Component:
                                         "lg": "2xl"
                                     }),
                                     rx.vstack(
-                                        rx.text("Sent messages: 12", font_size = {
+                                        rx.text("Sent messages: 102", font_size = {
                                             "base": "md",
                                             "md": "lg",
                                             "lg": "xl"
