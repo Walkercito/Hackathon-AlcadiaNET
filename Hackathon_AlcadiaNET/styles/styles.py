@@ -26,7 +26,7 @@ STYLESHEETS = {
 BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
     "color": TextColor.PRIMARY.value,
-    "background": Color.PRIMARY.value,
+    #"background": Color.PRIMARY.value,
     rx.link: {
         "font_family": Font.DEFAULT.value,
         "_active": {

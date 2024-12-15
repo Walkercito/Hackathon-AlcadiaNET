@@ -20,10 +20,10 @@ def footer() -> rx.Component:
         bg = Color.PRIMARY.value,
         align_items = "center",
         position = "sticky",
-        border_top = f"0.25em solid {Color.SECONDARY.value}",
-        padding_x = Size.MEDIUM.value,
-        padding_y = Size.MEDIUM.value,
-        padding_top = Size.DEFAULT.value,
+        border_top = f"0.10em solid {Color.SECONDARY.value}",
+        padding_x = Size.SMALL.value,
+        padding_y = Size.SMALL.value,
+        padding_top = Size.SMALL.value,
         width = "100%",
         bottom = "0"
     )

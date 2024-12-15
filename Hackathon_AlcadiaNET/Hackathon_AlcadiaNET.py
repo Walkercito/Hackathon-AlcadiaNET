@@ -37,6 +37,11 @@ def index() -> rx.Component:
         ),
         footer(),
         width = "100%",
+        bg = "url('/images/bg.png')",
+        background_size = "cover",
+        background_repeat = "no-repeat",
+        background_attachment = "fixed",
+        background_position = "center"
     )
 app = rx.App(
     stylesheets = STYLESHEETS,
