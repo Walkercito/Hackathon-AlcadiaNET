@@ -176,5 +176,6 @@ def guestbook_page() -> rx.Component:
         background_size="cover",
         background_repeat="no-repeat",
         background_attachment="fixed",
-        background_position="center"
+        background_position="center",
+        overflow_x="hidden"
     )
