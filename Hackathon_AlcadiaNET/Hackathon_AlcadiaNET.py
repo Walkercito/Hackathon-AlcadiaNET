@@ -12,6 +12,8 @@ from Hackathon_AlcadiaNET.styles.styles import STYLESHEETS, BASE_STYLE
 
 from Hackathon_AlcadiaNET.pages.chat_page import chat_page
 from Hackathon_AlcadiaNET.pages.profile_page import profile_page
+from Hackathon_AlcadiaNET.pages.guestbook_page import guestbook_page
+from Hackathon_AlcadiaNET.pages.games_page import games_page
 
 
 
@@ -67,4 +69,16 @@ app.add_page(
     image = "favicon.png",
     title = "ArcadiaNET | Chat",
     route = "/chatroom"
+)
+app.add_page(
+    guestbook_page,
+    image = "favicon.png",
+    title = "ArcadiaNET | Guestbook",
+    route = "/guestbook"
+)
+app.add_page(
+    games_page,
+    image = "favicon.png",
+    title = "ArcadiaNET | Games",
+    route = "/minigames"
 )

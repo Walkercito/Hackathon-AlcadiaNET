@@ -12,9 +12,9 @@ def bottoms() -> rx.Component:
     return rx.box(
         rx.flex(
             rx.grid(
-                button(text = "Gamesroom", url = "/minigames", style = ""),
-                button(text = "Chatroom", url = "/chatroom", style = "is-primary"),
-                button(text = "Guestbook", url = "/guestbook", style = ""),
+                button(text = "GameRoom", url = "/minigames", style = ""),
+                button(text = "ChatRoom", url = "/chatroom", style = "is-primary"),
+                button(text = "GuestBook", url = "/guestbook", style = ""),
                 columns = rx.breakpoints(initial = "2", md = "3"),
                 spacing = rx.breakpoints(initial = "4", md = "9"),
                 align_items = rx.breakpoints(initial = "center", md = "center"),

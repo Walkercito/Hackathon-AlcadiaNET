@@ -11,7 +11,7 @@ from Hackathon_AlcadiaNET.styles.styles import STYLESHEETS, MAX_WIDTH_STYLE
 
 
 
-def chat_page() -> rx.Component:
+def games_page() -> rx.Component:
     return rx.box(
         rx.script("document.documentElement.lang='en'"),
         navbar(),
