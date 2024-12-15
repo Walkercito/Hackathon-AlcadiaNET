@@ -15,6 +15,7 @@ class Size(Enum):
     DEFAULT = "1.5em"
     BIG = "2em"
     LARGE = "4em"
+    BOTTOM = "6em"
 
 
 STYLESHEETS = {
@@ -35,14 +36,19 @@ BASE_STYLE = {
         },
         "color": Color.PRIMARY.value,
         "text_decoration": "none",
-        "_hover": {},
+        "_hover": {
+            "text_decoration": "none",
+        },
         "user_select": "none",
         "-webkit-user-select": "none",
         "-moz-user-select": "none",
         "-ms-user-select": "none",
+        "text_decoration": "none !important",
+        "_focus": {
+            "text_decoration": "none",
+        },
     },
 }
-
 
 MAX_WIDTH_STYLE = dict(
     max_width = MAX_WIDTH,

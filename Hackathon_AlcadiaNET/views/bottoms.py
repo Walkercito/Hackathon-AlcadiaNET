@@ -12,9 +12,9 @@ def bottoms() -> rx.Component:
     return rx.box(
         rx.flex(
             rx.grid(
-                button(text = "RetoGames", url = "/minigames", style = ""),
-                button(text = "Chatroom", url = "/minigames", style = "is-primary"),
-                button(text = "Bookguest", url = "/minigames", style = ""),
+                button(text = "Gamesroom", url = "/minigames", style = ""),
+                button(text = "Chatroom", url = "/chatroom", style = "is-primary"),
+                button(text = "Guestbook", url = "/guestbook", style = ""),
                 columns = rx.breakpoints(initial = "2", md = "3"),
                 spacing = rx.breakpoints(initial = "4", md = "9"),
                 align_items = rx.breakpoints(initial = "center", md = "center"),
@@ -24,5 +24,6 @@ def bottoms() -> rx.Component:
             border_bottom = f"0.25em solid {Color.SECONDARY.value}",
             padding_x = Size.SMALL.value,
             padding_y = Size.SMALL.value,
+            margin_bottom = Size.BOTTOM.value,
         )
     )

@@ -16,9 +16,9 @@ def navbar() -> rx.Component:
             ),
             rx.spacer(),            
             button(
-                "Profile",
-                "/profile",
-                "is-warning",
+                "Home",
+                "/",
+                "is-error",
             ),
             align="center",
             width = "100%"

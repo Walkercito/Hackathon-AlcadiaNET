@@ -43,9 +43,12 @@ def index() -> rx.Component:
         background_attachment = "fixed",
         background_position = "center"
     )
+
+
 app = rx.App(
     stylesheets = STYLESHEETS,
     style = BASE_STYLE,
+    state = None,
 )
 app.add_page(
     index,

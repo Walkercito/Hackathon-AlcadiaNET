@@ -10,7 +10,7 @@ from Hackathon_AlcadiaNET.styles.colors import TextColor, Color
 def news() -> rx.Component:
     return rx.flex(
         rx.box(
-            rx.text("Breaking News!", class_name = "title"),
+            rx.text("Breaking News!", class_name = "title", color = TextColor.ACCENT.value),
             type_animation(
                 sequence=[
                     "Scientists predict the Internet is just a fad!",
