@@ -32,12 +32,17 @@ def guestbook_page() -> rx.Component:
                                 }),
                                 rx.vstack(
                                     rx.box(
-                                        rx.hstack(
+                                        rx.flex(
                                             rx.box(size = {
-                                                "base": "md",
+                                                "base": "8",
                                                 "md": "lg",
                                                 "lg": "xl"},
                                                 class_name = "nes-mario",
+                                                min_width = {
+                                                    "base": "32px",
+                                                    "md": "48px",
+                                                    "lg": "64px"
+                                                }
                                             ),
                                             rx.vstack(
                                                 rx.text("@GameMaster42", font_size = {
@@ -53,24 +58,30 @@ def guestbook_page() -> rx.Component:
                                                     "lg": "xl"
                                                 }),
                                                 spacing = "2",
-                                                align = "start",
+                                                align = "center",
                                             ),
                                             width = "100%",
                                             spacing = "6",
                                             align = "center",
                                             padding = "4",
+                                            direction="column"
                                         ),
                                         class_name = "nes-container is-dark",
                                         width = "100%",
                                         margin_bottom = "4",
                                     ),
                                     rx.box(
-                                        rx.hstack(
+                                        rx.flex(
                                             rx.box(size = {
-                                                "base": "md",
+                                                "base": "8",
                                                 "md": "lg",
                                                 "lg": "xl"},
                                                 class_name = "nes-kirby",
+                                                min_width = {
+                                                    "base": "32px",
+                                                    "md": "48px",
+                                                    "lg": "64px"
+                                                }
                                             ),
                                             rx.vstack(
                                                 rx.text("@RetroFan99", font_size = {
@@ -86,24 +97,30 @@ def guestbook_page() -> rx.Component:
                                                     "lg": "xl"
                                                 }),
                                                 spacing = "2",
-                                                align = "start",
+                                                align = "center",
                                             ),
                                             width = "100%",
                                             spacing = "6",
                                             align = "center",
                                             padding = "4",
+                                            direction="column"
                                         ),
                                         class_name = "nes-container is-dark",
                                         width = "100%",
                                         margin_bottom = "4",
                                     ),
                                     rx.box(
-                                        rx.hstack(
+                                        rx.flex(
                                             rx.box(size = {
-                                                "base": "md",
+                                                "base": "8",
                                                 "md": "lg",
                                                 "lg": "xl"},
                                                 class_name = "nes-pokeball",
+                                                min_width = {
+                                                    "base": "32px",
+                                                    "md": "48px",
+                                                    "lg": "64px"
+                                                }
                                             ),
                                             rx.vstack(
                                                 rx.text("@PixelArtist", font_size = {
@@ -119,12 +136,13 @@ def guestbook_page() -> rx.Component:
                                                     "lg": "xl"
                                                 }),
                                                 spacing = "2",
-                                                align = "start",
+                                                align = "center",
                                             ),
                                             width = "100%",
                                             spacing = "6",
                                             align = "center",
                                             padding = "4",
+                                            direction="column"
                                         ),
                                         class_name = "nes-container is-dark",
                                         width = "100%",
