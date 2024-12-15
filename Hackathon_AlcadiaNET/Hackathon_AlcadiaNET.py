@@ -84,7 +84,6 @@ app.add_page(
 )
 app.add_custom_404_page(
     rx.container(
-        rx.color_mode.button(position = "top-right"),
         rx.vstack(
             rx.heading(
                 "Oops! Page Not Found",
