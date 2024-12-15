@@ -13,3 +13,4 @@ class TextColor(Enum):
     SECONDARY = "#212529"
     TERCIARY = "#D3D3D3"
     HEADER = "#fdfb76"
+    BLACK = "#000000"

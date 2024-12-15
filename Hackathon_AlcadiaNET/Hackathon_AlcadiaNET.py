@@ -38,12 +38,13 @@ def index() -> rx.Component:
             spacing = "3"
         ),
         footer(),
-        width = "100%",
-        bg = "url('/images/bg.png')",
-        background_size = "cover",
-        background_repeat = "no-repeat",
-        background_attachment = "fixed",
-        background_position = "center"
+        width="100%",
+        height="100vh",
+        bg="url('/images/bg.png')",
+        background_size="cover",
+        background_repeat="no-repeat",
+        background_attachment="fixed",
+        background_position="center"
     )
 
 
