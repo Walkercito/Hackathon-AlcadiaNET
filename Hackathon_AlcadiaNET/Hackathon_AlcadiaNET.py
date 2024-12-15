@@ -82,3 +82,38 @@ app.add_page(
     title = "ArcadiaNET | Games",
     route = "/minigames"
 )
+app.add_custom_404_page(
+    rx.container(
+        rx.color_mode.button(position = "top-right"),
+        rx.vstack(
+            rx.heading(
+                "Oops! Page Not Found",
+                size = "8",
+                animation = "flicker 2s infinite",
+                color = "rgb(0, 255, 0)",
+                style = {
+                    "text-shadow": "0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00",
+                    "@keyframes flicker": {
+                        "0%": {"opacity": "1"},
+                        "25%": {"opacity": "0.4"},
+                        "30%": {"opacity": "1"},
+                        "35%": {"opacity": "0.4"},
+                        "40%": {"opacity": "1"},
+                        "45%": {"opacity": "0.2"},
+                        "50%": {"opacity": "1"},
+                        "75%": {"opacity": "0.5"},
+                        "100%": {"opacity": "1"}
+                    }
+                }
+            ),
+            rx.text(
+                "It looks like the page you're looking for doesn't exist.",
+                size = "5",
+            ),
+            spacing = "5",
+            justify = "center",
+            min_height = "85vh",
+        ),
+        rx.logo(),
+    )
+)
