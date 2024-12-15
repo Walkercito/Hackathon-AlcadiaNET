@@ -29,7 +29,8 @@ def header() -> rx.Component:
             rx.box(
                 rx.text(
                     "Your gateway to the digital frontier of the 90's!",
-                    color=TextColor.TERCIARY.value
+                    color=TextColor.TERCIARY.value,
+                    padding_top = Size.SMALL.value
                 ),
                 rx.text(
                     "Experience the nostalgia of the 90's with ArcadiaNET! Chats, games, and more, all in one place. Join the retro revolution today!",
